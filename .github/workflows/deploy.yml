@@ -23,7 +23,9 @@ jobs:
         with:
           hugo-version: '0.91.2' ## try latest
           extended: true
-      
+
+      - run: npm install # manually added
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -36,7 +38,7 @@ jobs:
           cache-dependency-path: '**/package-lock.json'
 
 
-      - run: npm install # manually added
+
 
       - run: npm ci
       
