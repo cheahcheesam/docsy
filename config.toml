@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Goldydocs"
+title = "Sam Docs"
 
 # Language settings
 contentDir = "content/en"
@@ -51,35 +51,35 @@ resampleFilter = "CatmullRom"
 quality = 75
 anchor = "smart"
 
-[services]
-[services.googleAnalytics]
-# Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
-id = "UA-00000000-0"
+#[services]
+#[services.googleAnalytics]
+## Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
+#id = "UA-00000000-0"
 
 # Language configuration
 
 [languages]
 [languages.en]
-title = "Goldydocs"
+title = "Sam Docs"
 description = "A Docsy example site"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
-[languages.no]
-title = "Goldydocs"
-description = "Docsy er operativsystem for skyen"
-languageName ="Norsk"
-contentDir = "content/no"
-time_format_default = "02.01.2006"
-time_format_blog = "02.01.2006"
+#[languages.no]
+#title = "Goldydocs"
+#description = "Docsy er operativsystem for skyen"
+#languageName ="Norsk"
+#contentDir = "content/no"
+#time_format_default = "02.01.2006"
+#time_format_blog = "02.01.2006"
 
-[languages.fa]
-title = "اسناد گلدی"
-description = "یک نمونه برای پوسته داکسی"
-languageName ="فارسی"
-contentDir = "content/fa"
-time_format_default = "2006.01.02"
-time_format_blog = "2006.01.02"
+#[languages.fa]
+#title = "اسناد گلدی"
+#description = "یک نمونه برای پوسته داکسی"
+#languageName ="فارسی"
+#contentDir = "content/fa"
+#time_format_default = "2006.01.02"
+#time_format_blog = "2006.01.02"
 
 [markup]
   [markup.goldmark]
@@ -98,20 +98,20 @@ time_format_blog = "2006.01.02"
 section = ["HTML", "print", "RSS"]
 
 [params]
-copyright = "The Docsy Authors"
-privacy_policy = "https://policies.google.com/privacy"
+#copyright = "The Docsy Authors"
+#privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
-version_menu = "Releases"
+#version_menu = "Releases"
 
 # Flag used in the "version-banner" partial to decide whether to display a 
 # banner on every page indicating that this is an archived version of the docs.
 # Set this flag to "true" if you want to display the banner.
-archived_version = false
+#archived_version = false
 
 # The version number for the version of the docs represented in this doc set.
 # Used in the "version-banner" partial to display a version number for the 
@@ -120,22 +120,22 @@ version = "0.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://example.com"
+url_latest_version = "https://doc.cheahcheesam.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/google/docsy-example"
+github_repo = "https://github.com/cheahcheesam/docsy"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/google/docsy"
+github_project_repo = "https://github.com/cheahcheesam/docsy"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
 
 # Uncomment this if your GitHub repo does not have "main" as the default branch,
 # or specify a new value if you want to reference another branch in your GitHub links
-github_branch= "master"
+github_branch= "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "d72aa9b2712488cc3"
+gcs_engine_id = "434d364b833e24228"  # docs.cheahcheesam.com
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
@@ -165,11 +165,11 @@ sidebar_search_disable = false
 # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
 # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
 # add "hide_feedback: true" to the page's front matter.
-[params.ui.feedback]
-enable = true
+#[params.ui.feedback]
+#enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
+#yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
+#no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
@@ -181,33 +181,33 @@ enable = false
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
   name = "User mailing list"
-  url = "https://example.org/mail"
+  url = "https://example.org/mail" # to be completed
   icon = "fa fa-envelope"
   desc = "Discussion and help from your fellow users"
 [[params.links.user]]
   name ="Twitter"
-  url = "https://example.org/twitter"
+  url = "https://example.org/twitter" # i got no twitter
   icon = "fab fa-twitter"
   desc = "Follow us on Twitter to get the latest news!"
 [[params.links.user]]
   name = "Stack Overflow"
-  url = "https://example.org/stack"
+  url = "https://example.org/stack" # i got no stack overflow
   icon = "fab fa-stack-overflow"
   desc = "Practical questions and curated answers"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
   name = "GitHub"
-  url = "https://github.com/google/docsy"
+  url = "https://github.com/cheahcheesam/docsy"
   icon = "fab fa-github"
   desc = "Development takes place here!"
 [[params.links.developer]]
   name = "Slack"
-  url = "https://example.org/slack"
+  url = "https://example.org/slack" # i got no slack
   icon = "fab fa-slack"
   desc = "Chat with other project developers"
 [[params.links.developer]]
   name = "Developer mailing list"
-  url = "https://example.org/mail"
+  url = "https://example.org/mail" # to be completed
   icon = "fa fa-envelope"
   desc = "Discuss development issues around the project"
 
@@ -218,10 +218,10 @@ enable = false
   # replacements = "github.com/google/docsy -> ../../docsy"
   [module.hugoVersion]
     extended = true
-    min = "0.75.0"
+    min = "0.110.0"
   [[module.imports]]
-    path = "github.com/google/docsy"
+    path = "github.com/cheahcheesam/themes/docsy"
     disable = false
   [[module.imports]]
-    path = "github.com/google/docsy/dependencies"
+    path = "github.com/cheahcheesam/themes/docsy/dependencies"
     disable = false    
