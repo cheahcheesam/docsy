@@ -14,10 +14,10 @@
 &lt;/figure>
 &lt;p>مشخصات زیر که در اطلاعات پست آمده است روی تمامی تصاویر این پست اعمال می‌شوند:&lt;/p>
 &lt;pre tabindex="0">&lt;code>resources:
-- src: &amp;quot;**.{png,jpg}&amp;quot;
-title: &amp;quot;Image #:counter&amp;quot;
+- src: &amp;#34;**.{png,jpg}&amp;#34;
+title: &amp;#34;Image #:counter&amp;#34;
 params:
-byline: &amp;quot;Photo: Riona MacNamara / CC-BY-CA&amp;quot;
+byline: &amp;#34;Photo: Riona MacNamara / CC-BY-CA&amp;#34;
 &lt;/code>&lt;/pre>&lt;p>برای افزودن تصویر در یک صفحه، مشخصات آن را به صورت زیر مشخص کنید:&lt;/p>
 &lt;pre tabindex="0">&lt;code>
 &lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
