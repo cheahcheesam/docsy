@@ -24,7 +24,7 @@ jobs:
           hugo-version: '0.91.2' ## try latest
           extended: true
 
-
+      - run: npm ci
       
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -37,8 +37,8 @@ jobs:
           # https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#caching-packages-data
           cache-dependency-path: '**/package-lock.json'
 
-      - run: npm install # manually added
-      - run: npm ci
+      # - run: npm install # manually added
+
 
 
       
