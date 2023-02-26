@@ -1,56 +1,42 @@
-name: GitHub Pages
+# inspired by peaceiris/actions-hugo (https://github.com/marketplace/actions/hugo-setup#%EF%B8%8F-workflow-for-autoprefixer-and-postcss-cli)
+# actions/setup-node has been removed, since ubuntu image already comes with the latest lts version of node.js
+
+name: build site with hugo then deploy to github pages
 
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - main  # set a branch to deploy
   pull_request:
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04 ## ubuntu-latest could work?
+    runs-on: ubuntu-22.04  # should remain updated to latest ubuntu lts
+
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
-    steps:
 
+    steps:
       - uses: actions/checkout@v3
         with:
-          #submodules: recursive  # Fetch the Docsy theme
-          fetch-depth: 1         # Fetch all history for .GitInfo and .Lastmod
+          fetch-depth: 1  # only fetch the latest commit to reduce runtime
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.91.2' ## try latest
+          hugo-version: "0.91.2"  # should be updated every 3 months or so
           extended: true
 
+      - run: npm install --package-lock-only # only update the package-lock.json, instead of checking node_modules and downloading dependencies. in our case it will be generating package-lock.json from package.json
+      - run: npm ci  # installing necessary packages
 
-# We don't need actions/setup-node since ubuntu-22.04 already comes with the latest version of LTS Node.js 
-#      - name: Setup Node
-#        uses: actions/setup-node@v3
-#        with:
-#          node-version: '18' ## better follow 16, since both peaceiris/actions-hugo and peaceiris/actions-gh-pages use node 16
-#          cache: 'npm'
-#          # The action defaults to search for the dependency file (package-lock.json,
-#          # npm-shrinkwrap.json or yarn.lock) in the repository root, and uses its
-#          # hash as a part of the cache key.
-#          # https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#caching-packages-data
-#          cache-dependency-path: '**/package-lock.json'
-
-      - run: npm install --package-lock-only # only update the package-lock.json, instead of checking node_modules and downloading dependencies. in our case it will be generating package-lock.json
-      - run: npm ci 
-
-
-      
-      - run: hugo --minify
-
-
+      - run: hugo --minify  # build site at ./public
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }} # changed master to main
+        if: ${{ github.ref == 'refs/heads/main' }}  # the branch we have set to deploy
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: pages
           commit_message: ${{ github.event.head_commit.message }}
-          cname: doc.cheahcheesam.com # this will be required for custom domain, otherwise will always be brought back to username.github.io/repo-name
+          cname: doc.cheahcheesam.com  # required to use custom domain, otherwise will always revert to username.github.io/repo-name
