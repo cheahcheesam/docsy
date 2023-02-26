@@ -17,23 +17,24 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3.3.0
         with:
           fetch-depth: 1  # only fetch the latest commit to reduce runtime
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v2.6.0
         with:
-          hugo-version: "0.91.2"  # should be updated every 3 months or so
+          hugo-version: "0.110.0"  # should be updated to latest minor release
           extended: true
 
       - run: npm install --package-lock-only # only update the package-lock.json, instead of checking node_modules and downloading dependencies. in our case it will be generating package-lock.json from package.json
+
       - run: npm ci  # installing necessary packages
 
       - run: hugo --minify  # build site at ./public
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v3.9.2
         if: ${{ github.ref == 'refs/heads/main' }}  # the branch we have set to deploy
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
