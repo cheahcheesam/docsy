@@ -220,8 +220,8 @@ enable = false
     extended = true
     min = "0.110.0"
   [[module.imports]]
-    path = "github.com/cheahcheesam/themes/docsy"
+    path = "github.com/cheahcheesam/docsy/themes/docsy"
     disable = false
   [[module.imports]]
-    path = "github.com/cheahcheesam/themes/docsy/dependencies"
+    path = "github.com/cheahcheesam/docsy/themes/docsy/dependencies"
     disable = false    
