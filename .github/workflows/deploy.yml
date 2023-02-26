@@ -25,7 +25,7 @@ jobs:
           extended: true
 
 
-      
+# We don't need actions/setup-node since ubuntu-22.04 already comes with the latest version of LTS Node.js 
 #      - name: Setup Node
 #        uses: actions/setup-node@v3
 #        with:
@@ -37,8 +37,8 @@ jobs:
 #          # https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#caching-packages-data
 #          cache-dependency-path: '**/package-lock.json'
 
-      - run: npm install # manually added
-      - run: npm ci
+      - run: npm install --package-lock-only # only update the package-lock.json, instead of checking node_modules and downloading dependencies. in our case it will be generating package-lock.json
+      - run: npm ci 
 
 
       
