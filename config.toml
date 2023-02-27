@@ -1,7 +1,8 @@
 baseURL = "/"
 title = "Sam Docs"
 
-theme: docsy
+theme = docsy
+# The themename in the above examples must match the name of the specific theme directory inside /themes
 
 # Language settings
 contentDir = "content/en"
