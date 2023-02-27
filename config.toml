@@ -1,6 +1,8 @@
 baseURL = "/"
 title = "Sam Docs"
 
+theme: docsy
+
 # Language settings
 contentDir = "content/en"
 defaultContentLanguage = "en"
