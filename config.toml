@@ -223,8 +223,22 @@ enable = false
     extended = true
     min = "0.110.0"
   [[module.imports]]
-    path = "github.com/cheahcheesam/docsy/themes/docsy"
+    path = "./themes/docsy"
     disable = false
   [[module.imports]]
-    path = "github.com/cheahcheesam/docsy/themes/docsy/dependencies"
+    path = "./themes/docsy/dependencies"
     disable = false    
+
+# original configuration
+#[module]
+#  # uncomment line below for temporary local development of module
+#  # replacements = "github.com/google/docsy -> ../../docsy"
+#  [module.hugoVersion]
+#    extended = true
+#    min = "0.75.0"
+#  [[module.imports]]
+#    path = "github.com/google/docsy"
+#    disable = false
+#  [[module.imports]]
+#    path = "github.com/google/docsy/dependencies"
+#    disable = false
