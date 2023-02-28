@@ -36,7 +36,7 @@ jobs:
       - run: npm install --package-lock-only
         working-directory: ./themes/docsy
       
-      - run: cpm ci
+      - run: npm ci
         working-directory: ./themes/docsy
 
 ### experiment
