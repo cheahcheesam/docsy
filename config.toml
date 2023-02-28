@@ -223,10 +223,10 @@ enable = false
     extended = true
     min = "0.110.0"
   [[module.imports]]
-    path = "themes/docsy"
+    path = themes/docsy
     disable = false
   [[module.imports]]
-    path = "themes/docsy/dependencies"
+    path = themes/docsy/dependencies
     disable = false    
 
 # original configuration
