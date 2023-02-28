@@ -1,7 +1,7 @@
 baseURL = "/"
 title = "Sam Docs"
 
-# theme = "docsy"
+theme = ["docsy"]
 # The themename in the above examples must match the name of the specific theme directory inside /themes
 
 # Language settings
@@ -216,18 +216,18 @@ enable = false
 
 # hugo module configuration
 
-[module]
-  # uncomment line below for temporary local development of module
-  # replacements = "github.com/google/docsy -> ../../docsy"
-  [module.hugoVersion]
-    extended = true
-    min = "0.110.0"
-  [[module.imports]]
-    path = "/home/runner/work/docsy/docsy/themes/docsy"
-    disable = false
-  [[module.imports]]
-    path = "/home/runner/work/docsy/docsy/themes/docsy/dependencies"
-    disable = false    
+#[module]
+#  # uncomment line below for temporary local development of module
+#  # replacements = "github.com/google/docsy -> ../../docsy"
+#  [module.hugoVersion]
+#    extended = true
+#    min = "0.110.0"
+#  [[module.imports]]
+#    path = "/home/runner/work/docsy/docsy/themes/docsy"
+#    disable = false
+#  [[module.imports]]
+#    path = "/home/runner/work/docsy/docsy/themes/docsy/dependencies"
+#    disable = false    
 
 # original configuration
 #[module]
