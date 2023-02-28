@@ -27,9 +27,9 @@ jobs:
           hugo-version: "0.110.0"  # should be updated to latest minor release
           extended: true
 
-#      - run: npm install --package-lock-only # only update the package-lock.json, instead of checking node_modules and downloading dependencies. in our case it will be generating package-lock.json from package.json
+      - run: npm install --package-lock-only # only update the package-lock.json, instead of checking node_modules and downloading dependencies. in our case it will be generating package-lock.json from package.json
 
-#      - run: npm ci  # installing necessary packages
+      - run: npm ci  # installing necessary packages
 
 ### experiment
 
