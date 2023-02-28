@@ -2,7 +2,6 @@ baseURL = "/"
 title = "Sam Docs"
 
 theme = "docsy"
-# The themename in the above examples must match the name of the specific theme directory inside /themes
 
 # Language settings
 contentDir = "content/en"
@@ -33,7 +32,6 @@ taxonomyCloudTitle = ["Tag Cloud", "Categories"]
 
 # set taxonomyPageHeader = [] to hide taxonomies on the page headers
 taxonomyPageHeader = ["tags", "categories"] 
-
 
 # Highlighting config
 pygmentsCodeFences = true
@@ -138,13 +136,14 @@ github_project_repo = "https://github.com/cheahcheesam/docsy"
 github_branch= "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "434d364b833e24228"  # docs.cheahcheesam.com
+#gcs_engine_id = "434d364b833e24228"  # docs.cheahcheesam.com
+# doesn't seem to work
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
 
 # Enable Lunr.js offline search
-offlineSearch = false
+offlineSearch = true
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
@@ -215,21 +214,6 @@ enable = false
   desc = "Discuss development issues around the project"
 
 # hugo module configuration
-
-#[module]
-#  # uncomment line below for temporary local development of module
-#  # replacements = "github.com/google/docsy -> ../../docsy"
-#  [module.hugoVersion]
-#    extended = true
-#    min = "0.110.0"
-#  [[module.imports]]
-#    path = "/home/runner/work/docsy/docsy/themes/docsy"
-#    disable = false
-#  [[module.imports]]
-#    path = "/home/runner/work/docsy/docsy/themes/docsy/dependencies"
-#    disable = false    
-
-# original configuration
 #[module]
 #  # uncomment line below for temporary local development of module
 #  # replacements = "github.com/google/docsy -> ../../docsy"
