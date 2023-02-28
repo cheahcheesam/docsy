@@ -27,21 +27,18 @@ jobs:
           hugo-version: "0.110.0"  # should be updated to latest minor release
           extended: true
 
-      - run: npm install --package-lock-only # only update the package-lock.json, instead of checking node_modules and downloading dependencies. in our case it will be generating package-lock.json from package.json
+      - name: Install PostCSS as per Docsy requirement  # https://www.docsy.dev/docs/get-started/other-options/#install-postcss
+        run: |
+          npm install --package-lock-only  # only generating package-lock.json from package.json
+          npm ci                           # install packages
 
-      - run: npm ci  # installing necessary packages
-
-### experiment
-
-      - run: npm install --package-lock-only
+      - name: Install addtional Docsy dependencies
+        run: |
+          npm install --package-lock-only  # only generating package-lock.json from package.json
+          npm ci                           # install packages
         working-directory: ./themes/docsy
-      
-      - run: npm ci
-        working-directory: ./themes/docsy
 
-### experiment
-
-      - run: hugo --minify  # build site at ./public
+      - run: hugo --minify                 # build site at ./public
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.9.2
