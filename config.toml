@@ -1,7 +1,6 @@
 baseURL = "/"
 title = "Sam Docs"
 
-themesDir = "./themes"
 theme = "docsy"
 # The themename in the above examples must match the name of the specific theme directory inside /themes
 
