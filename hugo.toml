@@ -137,8 +137,8 @@ weight = 1
 
 # comment out if you don't want the "print entire section" link enabled.
 # details refer to https://www.docsy.dev/docs/adding-content/print/
-[outputs]
-section = ["HTML", "print", "RSS"]
+#[outputs]
+#section = ["HTML", "print", "RSS"]
 
 [params]
 # shown at bottom of site
