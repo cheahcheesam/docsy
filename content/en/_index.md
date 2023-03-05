@@ -3,6 +3,8 @@ title: "Sam Docs"
 linkTitle: "Sam Docs"
 ---
 
+## Foreword
+
 Hello there, thanks for dropping by and welcome!
 
 My objective of building this site is to promote knowledge sharing across all levels. Suggestions and feedback are most welcomed! 😃
