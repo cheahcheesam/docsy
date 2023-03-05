@@ -229,7 +229,7 @@ navbar_logo = true
 
 # set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
 # details refer to https://www.docsy.dev/docs/adding-content/lookandfeel/#navbar
-navbar_translucent_over_cover_disable = false
+navbar_translucent_over_cover_disable = true
 
 # enable to show the side bar menu in its compact state.
 # details refer to https://www.docsy.dev/docs/adding-content/navigation/#section-menu-options
