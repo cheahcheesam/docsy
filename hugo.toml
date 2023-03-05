@@ -221,7 +221,7 @@ breadcrumb_disable = false
 
 # set to true to disable the about link in the site footer
 # details refer to https://github.com/google/docsy/issues/430
-footer_about_disable = false
+footer_about_disable = true
 
 # set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
 # details refer to https://www.docsy.dev/docs/adding-content/iconsimages/#add-your-logo
