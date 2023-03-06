@@ -6,6 +6,8 @@ menu:
     weight: 10
 ---
 
+{{< blocks/cover title="About Myself" height="min" >}}
+
 ## Past Experiences
 
-Some past experiences.
+{{< /blocks/cover >}}
