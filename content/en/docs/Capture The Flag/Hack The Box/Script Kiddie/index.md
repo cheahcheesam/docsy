@@ -21,3 +21,7 @@ With that said, let’s begin!
 ![image](images/1_test_img.png)
 
 Testing image
+
+---
+
+Another section
