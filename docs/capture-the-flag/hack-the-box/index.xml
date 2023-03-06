@@ -1,0 +1,8 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sam Docs – Hack The Box Writeups</title><link>/docs/capture-the-flag/hack-the-box/</link><description>Recent content in Hack The Box Writeups on Sam Docs</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 06 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/docs/capture-the-flag/hack-the-box/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Script Kiddie Writeup</title><link>/docs/capture-the-flag/hack-the-box/script-kiddie/</link><pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate><guid>/docs/capture-the-flag/hack-the-box/script-kiddie/</guid><description>
+&lt;p>Script Kiddie!
+What is the author (0xdf)implying to us?&lt;/p>
+&lt;p>A box for script kiddies?
+Or is it a box for us to stand out from the script kiddies?
+My guess would be the latter…&lt;/p>
+&lt;p>Always remember, the destination (root.txt) is not what’s important, it’s the journey (every line that got us to root.txt) that counts.&lt;/p>
+&lt;p>With that said, let’s begin!&lt;/p></description></item></channel></rss>
