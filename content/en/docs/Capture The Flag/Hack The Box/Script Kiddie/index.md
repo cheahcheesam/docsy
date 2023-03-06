@@ -18,3 +18,6 @@ Always remember, the destination (root.txt) is not what’s important, it’s th
 
 With that said, let’s begin!
 
+![image](images/1_test_img.png)
+
+Testing image
