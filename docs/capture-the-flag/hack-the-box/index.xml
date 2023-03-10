@@ -27,4 +27,21 @@ My guess would be the latter…&lt;/p>
 &lt;td style="text-align:right">text&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item></channel></rss>
+&lt;/table>
+&lt;ol>
+&lt;li>
+&lt;p>First text&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Second&lt;br>
+Second&lt;br>&lt;/p>
+&lt;p>Some text&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Third
+Third no br&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fourth&lt;/p>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>
