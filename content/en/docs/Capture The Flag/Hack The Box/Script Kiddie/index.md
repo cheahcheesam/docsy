@@ -27,3 +27,7 @@ Testing image
 ---
 
 Another section
+
+| Should be Centered | Should be Right Aligned |
+| :-: | -: |
+| text | text |
