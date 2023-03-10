@@ -11,6 +11,9 @@ My guess would be the latter…&lt;/p>
 &lt;p>&lt;a href="images/crackme1.bin">File download test&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>Another section&lt;/p>
+&lt;p>&lt;strong>bold text&lt;/strong>&lt;/p>
+&lt;p>&lt;em>italic text&lt;/em>&lt;/p>
+&lt;p>&lt;em>&lt;strong>bold italic text&lt;/strong>&lt;/em>&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
