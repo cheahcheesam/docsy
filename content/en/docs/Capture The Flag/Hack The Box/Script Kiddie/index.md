@@ -32,7 +32,7 @@ Another section
 
 *italic text*
 
-***bold italic text***
+[***linked bold italic text***](docs.cheahcheesam.com)
 
 | Should be Centered | Should be Right Aligned |
 | :-: | -: |
