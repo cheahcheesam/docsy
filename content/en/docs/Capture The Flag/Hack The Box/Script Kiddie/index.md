@@ -37,3 +37,12 @@ Another section
 | Should be Centered | Should be Right Aligned |
 | :-: | -: |
 | text | text |
+
+1. First text
+2. Second<br>
+   Second<br>
+   
+   Some text
+3. Third
+   Third no br
+4. Fourth
