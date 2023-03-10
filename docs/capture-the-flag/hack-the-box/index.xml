@@ -10,4 +10,18 @@ My guess would be the latter…&lt;/p>
 &lt;p>Testing image&lt;/p>
 &lt;p>&lt;a href="images/crackme1.bin">File download test&lt;/a>&lt;/p>
 &lt;hr>
-&lt;p>Another section&lt;/p></description></item></channel></rss>
+&lt;p>Another section&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">Should be Centered&lt;/th>
+&lt;th style="text-align:right">Should be Right Aligned&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">text&lt;/td>
+&lt;td style="text-align:right">text&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>
