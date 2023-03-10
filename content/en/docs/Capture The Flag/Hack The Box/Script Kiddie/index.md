@@ -28,6 +28,12 @@ Testing image
 
 Another section
 
+**bold text**
+
+*italic text*
+
+***bold italic text***
+
 | Should be Centered | Should be Right Aligned |
 | :-: | -: |
 | text | text |
