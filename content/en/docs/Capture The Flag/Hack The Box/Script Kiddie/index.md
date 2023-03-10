@@ -22,6 +22,8 @@ With that said, let’s begin!
 
 Testing image
 
+[File download test](images/crackme1.bin)
+
 ---
 
 Another section
