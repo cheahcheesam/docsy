@@ -46,3 +46,8 @@ Another section
 3. Third
    Third no br
 4. Fourth
+
+```yml
+- hosts: all
+  become: true
+```
