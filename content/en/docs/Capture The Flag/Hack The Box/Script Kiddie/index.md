@@ -26,6 +26,8 @@ Testing image
 
 ---
 
+testing
+
 Another section
 
 **bold text**
